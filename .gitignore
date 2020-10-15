@@ -1,0 +1,15 @@
+.bloop/
+.metals/
+target/
+boot/
+lib_managed/
+src_managed/
+project/plugins/project/
+.idea/
+build/
+out/
+**/target/
+*.env
+**/.clever.json
+project/project/
+.vscode/

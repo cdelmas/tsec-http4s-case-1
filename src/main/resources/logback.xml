@@ -1,0 +1,15 @@
+<configuration>
+
+  <variable name="APP_LOG_LEVEL" value="${APP_LOG_LEVEL:-INFO}" />
+  <variable name="TECH_STACK_LOG_LEVEL" value="${TECH_STACK_LOG_LEVEL:-WARN}" />
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>[%thread] %highlight(%-5level) %cyan(%logger{15}) - %msg %n</pattern>
+    </encoder>
+  </appender>
+  <logger name="fr.bluevalet.tseccase" level="${APP_LOG_LEVEL}" />
+  <root level="${TECH_STACK_LOG_LEVEL}">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>
